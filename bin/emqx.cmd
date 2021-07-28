@@ -6,26 +6,7 @@
 :: * start - start the service and Erlang node
 :: * stop - stop the service and Erlang node
 :: * restart - run the stop command and start command
-:: * uninstall - uninstall the service and kill a running node
-:: * ping - check if the node is running
-:: * console - start the Erlang release in a `werl` Windows shell
-:: * attach - connect to a running node and open an interactive console
-:: * list - display a listing of installed Erlang services
-:: * usage - display available commands
-
-:: Set variables that describe the release
-@set rel_name=emqx
-@set rel_vsn={{ release_version }}
-@set erts_vsn={{ erts_vsn }}
-@set erl_opts={{ erl_opts }}
-
-@set "CUTTLEFISH_ENV_OVERRIDE_PREFIX=EMQX_"
-
-@set script=%~n0
-
-:: Discover the release root directory from the directory
-:: of this script
-@set script_dir=%~dp0
+:: * uninstall - uninstafhioerwwe 
 @for %%A in ("%script_dir%\..") do @(
   set rel_root_dir=%%~fA
 )
